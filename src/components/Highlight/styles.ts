@@ -22,7 +22,7 @@ const wrapperModifiers = {
     }
 
     ${FloatImage} {
-      justify-self: left;
+      justify-self: end;
     }
   `
 }
