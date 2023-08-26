@@ -33,7 +33,6 @@ export const Wrapper = styled.section<WrapperProps>`
     .slick-prev,
     .slick-next {
       display: block;
-      color: ${theme.colors[color!]};
       cursor: pointer;
       position: absolute;
       top: 50%;
@@ -41,6 +40,10 @@ export const Wrapper = styled.section<WrapperProps>`
       height: 2.5rem;
       padding: 0;
       transform: translate(0, -50%);
+
+      svg {
+        color: ${theme.colors[color!]};
+      }
     }
     .slick-prev {
       left: -${theme.spacings.xxlarge};

@@ -6,6 +6,21 @@ import GameCard, { GameCardProps } from 'components/GameCard'
 
 import * as S from './styles'
 
+export type SlickButtonFixProps = {
+  children: React.ReactNode
+  currentSlide: React.ReactNode
+  slideCount: number
+}
+
+const SlickButtonFix = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  currentSlide,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  slideCount,
+  children,
+  ...props
+}: SlickButtonFixProps) => <span {...props}>{children}</span>
+
 const settings: SliderSettings = {
   arrows: true,
   slidesToShow: 4,
@@ -41,8 +56,16 @@ const settings: SliderSettings = {
       }
     }
   ],
-  nextArrow: <ArrowRight aria-label="next games" />,
-  prevArrow: <ArrowLeft aria-label="previous games" />
+  nextArrow: (
+    <SlickButtonFix currentSlide={undefined} slideCount={0}>
+      <ArrowRight aria-label="next games" />
+    </SlickButtonFix>
+  ),
+  prevArrow: (
+    <SlickButtonFix currentSlide={undefined} slideCount={0}>
+      <ArrowLeft aria-label="previous games" />
+    </SlickButtonFix>
+  )
 }
 
 export type GameCardSliderProps = {
