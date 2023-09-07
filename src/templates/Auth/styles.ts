@@ -6,11 +6,11 @@ import * as LogoStyles from 'components/Logo/styles'
 
 export const Wrapper = styled.main`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   height: 100vh;
 
-  ${media.lessThan('medium')`
-      grid-template-columns: 1fr 1fr;
+  ${media.greaterThan('medium')`
+    grid-template-columns: 1fr 1fr;
   `}
 `
 
