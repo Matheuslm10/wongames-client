@@ -40,7 +40,7 @@
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.3",
+    "@babel/core": "^7.22.19",
     "@babel/preset-typescript": "^7.10.1",
     "@storybook/addon-essentials": "6.0.10",
     "@storybook/react": "6.0.10",
