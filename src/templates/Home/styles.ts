@@ -7,7 +7,7 @@ import * as HighlightStyles from 'components/Highlight/styles'
 
 export const SectionBanner = styled.section`
   ${({ theme }) => css`
-    margin: 0 calc(-${theme.grid.gutter} / 2);
+    margin: ${theme.spacings.large} calc(-${theme.grid.gutter} / 2);
 
     ${media.greaterThan('medium')`
       position: relative;
@@ -33,8 +33,11 @@ export const SectionNews = styled.div`
         color: ${theme.colors.black};
       },
       ${GameCardSliderStyles.Wrapper} {
-        svg {
-          color: ${theme.colors.black};
+        .slick-prev,
+        .slick-next {
+          svg {
+            color: ${theme.colors.black};
+          }
         }
       }
     `}
