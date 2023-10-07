@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GameInfo /> should render game informations 1`] = `
+.c7 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 .c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -85,6 +91,22 @@ exports[`<GameInfo /> should render game informations 1`] = `
   color: #e20e8d;
 }
 
+.c1 {
+  color: #030517;
+  position: relative;
+  margin-bottom: 3.2rem;
+  font-size: 2.0rem;
+}
+
+.c1::after {
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  content: '';
+  width: 5rem;
+  border-bottom: 0.5rem solid #F231A5;
+}
+
 .c3 {
   position: absolute;
   top: 1.6rem;
@@ -166,26 +188,10 @@ exports[`<GameInfo /> should render game informations 1`] = `
   margin-bottom: 0.8rem;
 }
 
-.c1 {
-  color: #030517;
-  position: relative;
-  margin-bottom: 3.2rem;
-  font-size: 2.0rem;
-}
-
-.c1::after {
-  position: absolute;
-  left: 0;
-  bottom: -0.5rem;
-  content: '';
-  width: 5rem;
-  border-bottom: 0.5rem solid #F231A5;
-}
-
-.c7 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
+@media (min-width:768px) {
+  .c1 {
+    font-size: 2.8rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -219,12 +225,6 @@ exports[`<GameInfo /> should render game informations 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c1 {
-    font-size: 2.8rem;
-  }
-}
-
 <main
   class="c0"
 >
@@ -238,7 +238,7 @@ exports[`<GameInfo /> should render game informations 1`] = `
     class="c2 c3"
     color="secondary"
   >
-    $210,00
+    $210.00
   </div>
   <p
     class="c4"
