@@ -41,3 +41,13 @@ WithRibbon.args = {
   ribbonSize: 'small',
   ribbonColor: 'primary'
 }
+
+export const Free: Story<GameCardProps> = (args) => (
+  <div style={{ width: '30rem' }}>
+    <GameCard {...args} />
+  </div>
+)
+
+Free.args = {
+  price: 0
+}

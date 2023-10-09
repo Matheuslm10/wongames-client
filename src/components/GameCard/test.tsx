@@ -55,6 +55,14 @@ describe('<GameCard />', () => {
     })
   })
 
+  it('should render FREE label when price is 0', () => {
+    renderWithTheme(<GameCard {...props} price={0} />)
+
+    expect(screen.getByText('FREE')).toHaveStyle({
+      'background-color': '#3CD3C1'
+    })
+  })
+
   it('should render a filled Favorite icon when favorite is true', () => {
     renderWithTheme(<GameCard {...props} favorite />)
 
