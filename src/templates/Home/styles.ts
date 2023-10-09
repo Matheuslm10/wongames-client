@@ -3,7 +3,6 @@ import media from 'styled-media-query'
 
 import * as HeadingStyles from 'components/Heading/styles'
 import * as GameCardSliderStyles from 'components/GameCardSlider/styles'
-import * as HighlightStyles from 'components/Highlight/styles'
 
 export const SectionBanner = styled.section`
   ${({ theme }) => css`
@@ -41,13 +40,5 @@ export const SectionNews = styled.div`
         }
       }
     `}
-  `}
-`
-
-export const SectionUpcoming = styled.div`
-  ${({ theme }) => css`
-    ${HighlightStyles.Wrapper} {
-      margin-top: calc(${theme.spacings.xlarge} * 2);
-    }
   `}
 `
