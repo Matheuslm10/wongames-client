@@ -1,3 +1,5 @@
+import { useQueryGames } from 'graphql/queries/games'
+
 import { KeyboardArrowDown } from '@styled-icons/material-outlined'
 import Base from 'templates/Base'
 
@@ -12,28 +14,49 @@ export type GamesTemplateProps = {
   filterItems: ItemProps[]
 }
 
-const GamesTemplate = ({ filterItems, games = [] }: GamesTemplateProps) => (
-  <Base>
-    <S.Main>
-      <ExploreSidebar
-        items={filterItems}
-        onFilter={() => console.log('Filter')}
-      />
+const GamesTemplate = ({ filterItems }: GamesTemplateProps) => {
+  const { data, loading, fetchMore } = useQueryGames({
+    variables: { limit: 15 }
+  })
 
-      <section>
-        <Grid>
-          {games.map((item) => (
-            <GameCard key={item.title} {...item} />
-          ))}
-        </Grid>
+  const handleShowMore = () => {
+    fetchMore({ variables: { limit: 15, start: data?.games.length } })
+  }
 
-        <S.ShowMore role="button" onClick={() => console.log('show more')}>
-          <p>Show More</p>
-          <KeyboardArrowDown size={35} />
-        </S.ShowMore>
-      </section>
-    </S.Main>
-  </Base>
-)
+  return (
+    <Base>
+      <S.Main>
+        <ExploreSidebar
+          items={filterItems}
+          onFilter={() => console.log('Filter')}
+        />
+
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
+          <section>
+            <Grid>
+              {data?.games.map((game) => (
+                <GameCard
+                  key={game.slug}
+                  title={game.name}
+                  slug={game.slug}
+                  developer={game.developers[0].name}
+                  img={`http://localhost:1337${game.cover!.url}`}
+                  price={game.price}
+                />
+              ))}
+            </Grid>
+
+            <S.ShowMore role="button" onClick={handleShowMore}>
+              <p>Show More</p>
+              <KeyboardArrowDown size={35} />
+            </S.ShowMore>
+          </section>
+        )}
+      </S.Main>
+    </Base>
+  )
+}
 
 export default GamesTemplate
