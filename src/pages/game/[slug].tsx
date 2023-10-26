@@ -20,6 +20,12 @@ import {
 } from 'graphql/generated/QueryGameBySlug'
 import { GetStaticProps } from 'next'
 
+import gamesMock from 'components/GameCardSlider/mock'
+import gameInfoMock from 'components/GameInfo/mock'
+import gameDetailsMock from 'components/GameDetails/mock'
+import galleryMock from 'components/Gallery/mock'
+import highlightMock from 'components/Highlight/mock'
+
 const apolloClient = initializeApollo()
 
 export default function Index(props: GameTemplateProps) {
@@ -31,6 +37,15 @@ export default function Index(props: GameTemplateProps) {
 }
 
 export async function getStaticPaths() {
+  if (process.env.NODE_ENV !== 'development') {
+    return {
+      paths: gamesMock.map(({ slug }) => ({
+        params: { slug }
+      })),
+      fallback: true
+    }
+  }
+
   const { data } = await apolloClient.query<QueryGames, QueryGamesVariables>({
     query: QUERY_GAMES,
     variables: { limit: 9 }
@@ -44,6 +59,32 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  if (process.env.NODE_ENV !== 'development') {
+    const descriptionHTML = `
+      * Exclusive Digital Comic - Cyberpunk 2077: Big City Dreams will be available in English only.
+      <hr><p class="module">Korean Voiceover will be added on 11th December 2020.</p><br><img alt="" src="https://items.gog.com/not_a_cp/EN/EN-About-the-Game.png"><br><br><b>Cyberpunk 2077</b> is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.
+      <br><br><img alt="" src="https://items.gog.com/not_a_cp/EN/EN-Mercenary-Outlaw.png"><br><br>
+      Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City.
+      </p>
+    `
+
+    return {
+      props: {
+        cover:
+          'https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1366x655.jpg',
+        gameInfo: gameInfoMock,
+        gallery: galleryMock,
+        description: descriptionHTML,
+        details: gameDetailsMock,
+        upcomingGamesTitle: 'Upcomming games',
+        upcomingGames: gamesMock,
+        upcomingHighlight: highlightMock,
+        recommendedGamesTitle: 'Recommended games',
+        recommendedGames: gamesMock
+      }
+    }
+  }
+
   const { data } = await apolloClient.query<
     QueryGameBySlug,
     QueryGameBySlugVariables

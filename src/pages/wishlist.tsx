@@ -6,12 +6,24 @@ import { gamesMapper, highlightMapper } from 'utils/mappers'
 import Wishlist, { WishlistTemplateProps } from 'templates/Wishlist'
 
 import gamesMock from 'components/GameCardSlider/mock'
+import highlightMock from 'components/Highlight/mock'
 
 export default function WishlistPage(props: WishlistTemplateProps) {
   return <Wishlist {...props} />
 }
 
 export async function getStaticProps() {
+  if (process.env.NODE_ENV !== 'development') {
+    return {
+      props: {
+        games: gamesMock,
+        recommendedGamesTitle: 'Recommended games',
+        recommendedGames: gamesMock,
+        recommendedHighlight: highlightMock
+      }
+    }
+  }
+
   const apolloClient = initializeApollo()
 
   const { data } = await apolloClient.query<QueryRecommended>({
