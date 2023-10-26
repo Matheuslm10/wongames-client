@@ -8,6 +8,7 @@ export const Title = styled.div`
     display: flex;
     align-items: center;
     padding-right: 2.4rem;
+    z-index: ${theme.layers.alwaysOnTop};
   `}
 `
 
@@ -20,6 +21,7 @@ export const Content = styled.div`
     margin-top: ${theme.spacings.small};
     position: absolute;
     right: 0;
+    z-index: ${theme.layers.alwaysOnTop};
 
     &::before {
       content: '';
@@ -33,20 +35,45 @@ export const Content = styled.div`
   `}
 `
 
+export const Overlay = styled.div`
+  ${({ theme }) => css`
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    z-index: ${theme.layers.overlay};
+  `}
+`
+
 type WrapperProps = {
   isOpen?: boolean
 }
 
+type ChangeTransformProp = {
+  changeTransform: boolean
+}
+
 const wrapperModifiers = {
-  open: () => css`
+  open: ({ changeTransform }: ChangeTransformProp) => css`
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0);
+
+    ${changeTransform &&
+    css`
+      transform: translateY(0);
+    `}
   `,
-  close: () => css`
+  close: ({ changeTransform }: ChangeTransformProp) => css`
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-2rem);
+
+    ${changeTransform &&
+    css`
+      transform: translateY(-2rem);
+    `}
   `
 }
 
@@ -57,8 +84,14 @@ export const Wrapper = styled.div<WrapperProps>`
 
     ${Content} {
       transition: transform 0.2s ease-in, opacity ${theme.transition.default};
-      ${isOpen && wrapperModifiers.open()}
-      ${!isOpen && wrapperModifiers.close()}
+      ${isOpen && wrapperModifiers.open({ changeTransform: true })}
+      ${!isOpen && wrapperModifiers.close({ changeTransform: true })}
+    }
+
+    ${Overlay} {
+      transition: opacity ${theme.transition.default};
+      ${isOpen && wrapperModifiers.open({ changeTransform: false })}
+      ${!isOpen && wrapperModifiers.close({ changeTransform: false })}
     }
   `}
 `
