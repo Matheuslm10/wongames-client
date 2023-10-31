@@ -4,7 +4,7 @@ import { setStorageItem } from 'utils/localStorage'
 import { useCart, CartProvider, CartProviderProps } from '.'
 import { cartItems, gamesMock } from './mock'
 import { MockedProvider } from '@apollo/client/testing'
-import { act } from '@testing-library/react'
+import { act } from 'utils/test-utils'
 
 describe('useCart', () => {
   beforeEach(() => {
