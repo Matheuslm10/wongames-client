@@ -1,3 +1,5 @@
+import { GetServerSidePropsContext } from 'next'
+import protectedRoutes from 'utils/protected-routes'
 import { initializeApollo } from 'utils/apollo'
 import { QueryRecommended } from 'graphql/generated/QueryRecommended'
 import { QUERY_RECOMMENDED } from 'graphql/queries/recommended'
@@ -12,7 +14,9 @@ export default function WishlistPage(props: WishlistTemplateProps) {
   return <Wishlist {...props} />
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const session = await protectedRoutes(context)
+
   if (process.env.NODE_ENV !== 'development') {
     return {
       props: {
@@ -32,6 +36,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      session,
       games: gamesMock,
       recommendedGamesTitle: data.recommended?.section?.title,
       recommendedGames: gamesMapper(data.recommended?.section?.games),
