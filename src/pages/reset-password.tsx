@@ -1,10 +1,10 @@
 import Auth from 'templates/Auth'
-import FormForgotPassword from 'components/FormForgotPassword'
+import FormResetPassword from 'components/FormResetPassword'
 
 export default function ResetPassword() {
   return (
     <Auth title="Reset password">
-      <FormForgotPassword />
+      <FormResetPassword />
     </Auth>
   )
 }
