@@ -114,9 +114,11 @@ export const CardInfo = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    img {
-      margin-left: ${theme.spacings.xxsmall};
+
+    span {
+      margin-right: ${theme.spacings.xxsmall};
     }
+
     ${media.lessThan('medium')`
       margin-top: ${theme.spacings.xsmall};
     `}
