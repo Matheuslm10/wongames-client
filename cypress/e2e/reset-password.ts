@@ -8,11 +8,13 @@ describe('Reset Password', () => {
     cy.findAllByPlaceholderText(/confirm password/i).type('321')
     cy.findByRole('button', { name: /reset password/i }).click()
 
-    cy.findByText(/confirm password does not match with password/i).should('exist')
-  });
+    cy.findByText(/confirm password does not match with password/i).should(
+      'exist'
+    )
+  })
 
   it('should show error if code is not valid', () => {
-    cy.intercept('POST', '**/auth/reset-password', res => {
+    cy.intercept('POST', '**/auth/reset-password', (res) => {
       res.reply({
         status: 400,
         body: {
@@ -37,7 +39,7 @@ describe('Reset Password', () => {
     cy.findByRole('button', { name: /reset password/i }).click()
 
     cy.findByText(/Incorrect code provided/i).should('exist')
-  });
+  })
 
   it('should fill the input and redirect to home page with the user signed in', () => {
     // next-auth credentials route
@@ -55,17 +57,17 @@ describe('Reset Password', () => {
     // next-auth session route
     cy.intercept('GET', '**/auth/session*', {
       statusCode: 200,
-      body: { user: { name: "cypress" } }
+      body: { user: { name: 'cypress' } }
     })
 
     cy.visit('/reset-password?code=12345')
 
     cy.findAllByPlaceholderText(/^password/i).type('pass123')
     cy.findAllByPlaceholderText(/confirm password/i).type('pass123')
-    cy.findByRole('button', { name: /reset password/i}).click()
+    cy.findByRole('button', { name: /reset password/i }).click()
 
     cy.url().should('eq', `${Cypress.config().baseUrl}/`)
 
     cy.findByText(/cypress/i).should('exist')
-  });
-});
+  })
+})

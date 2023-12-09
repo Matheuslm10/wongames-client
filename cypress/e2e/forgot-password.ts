@@ -2,7 +2,7 @@
 
 describe('Forgot Password', () => {
   it('should fill the input and receive a success message', () => {
-    cy.intercept('POST', '**/auth/forgot-password', res => {
+    cy.intercept('POST', '**/auth/forgot-password', (res) => {
       res.reply({
         status: 200,
         body: { ok: true }
@@ -17,10 +17,10 @@ describe('Forgot Password', () => {
     cy.findByRole('button', { name: /send e-mail/i }).click()
 
     cy.findByText(/You just received an e-mail!/i).should('exist')
-  });
+  })
 
   it('should fill the input with an invalid email and receive an error', () => {
-    cy.intercept('POST', '**/auth/forgot-password', res => {
+    cy.intercept('POST', '**/auth/forgot-password', (res) => {
       res.reply({
         status: 400,
         body: {
@@ -44,5 +44,5 @@ describe('Forgot Password', () => {
     cy.findByRole('button', { name: /send e-mail/i }).click()
 
     cy.findByText(/This e-mail does not exist/i).should('exist')
-  });
-});
+  })
+})

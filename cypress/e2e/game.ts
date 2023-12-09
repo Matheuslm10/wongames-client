@@ -14,7 +14,10 @@ describe('Game Page', () => {
     })
 
     // Gallery
-    cy.findAllByRole('button', { name: /thumb \-/i }).should('have.length.gt', 0)
+    cy.findAllByRole('button', { name: /thumb \-/i }).should(
+      'have.length.gt',
+      0
+    )
 
     // Content
     cy.getByDataCy('content').within(() => {
@@ -40,9 +43,12 @@ describe('Game Page', () => {
       cy.findByText('Platformer / Action / Adventure').should('exist')
     })
 
-    cy.shouldRenderShowcase({ name: "Upcoming Games", highlight: true})
-    cy.shouldRenderShowcase({ name: "You may like these games", highlight: false})
-  });
+    cy.shouldRenderShowcase({ name: 'Upcoming Games', highlight: true })
+    cy.shouldRenderShowcase({
+      name: 'You may like these games',
+      highlight: false
+    })
+  })
 
   it('should add/remove game in cart', () => {
     // add to cart
@@ -72,5 +78,5 @@ describe('Game Page', () => {
     })
 
     cy.findAllByLabelText(/cart items/i).should('not.exist')
-  });
-});
+  })
+})
