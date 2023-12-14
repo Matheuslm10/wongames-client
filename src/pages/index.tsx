@@ -4,34 +4,11 @@ import { QueryHome, QueryHomeVariables } from 'graphql/generated/QueryHome'
 import { QUERY_HOME } from 'graphql/queries/home'
 import { bannerMapper, gamesMapper, highlightMapper } from 'utils/mappers'
 
-import bannersMock from 'components/BannerSlider/mock'
-import gamesMock from 'components/GameCardSlider/mock'
-import highlightMock from 'components/Highlight/mock'
-
 export default function Index(props: HomeTemplateProps) {
   return <Home {...props} />
 }
 
 export async function getStaticProps() {
-  if (process.env.NODE_ENV !== 'development') {
-    return {
-      props: {
-        banners: bannersMock,
-        newGamesTitle: 'New games',
-        newGames: gamesMock,
-        mostPopularGamesTitle: 'Most popular games',
-        mostPopularGames: gamesMock,
-        mostPopularHighlight: highlightMock,
-        upcomingGamesTitle: 'Upcomming games',
-        upcomingGames: gamesMock,
-        upcomingHighlight: highlightMock,
-        freeGamesTitle: 'Free games',
-        freeGames: gamesMock,
-        freeHighlight: highlightMock
-      }
-    }
-  }
-
   const apolloClient = initializeApollo()
   const TODAY = new Date().toISOString().slice(0, 10)
 
