@@ -4,8 +4,6 @@ import { initializeApollo } from 'utils/apollo'
 import { QueryRecommended } from 'graphql/generated/QueryRecommended'
 import { QUERY_RECOMMENDED } from 'graphql/queries/recommended'
 import { gamesMapper, highlightMapper } from 'utils/mappers'
-import gamesMock from 'components/GameCardSlider/mock'
-import highlightMock from 'components/Highlight/mock'
 
 export default function SuccessPage(props: SuccessTemplateProps) {
   return <Success {...props} />
@@ -13,16 +11,6 @@ export default function SuccessPage(props: SuccessTemplateProps) {
 
 export async function getStaticProps() {
   const apolloClient = initializeApollo()
-
-  if (process.env.NODE_ENV !== 'development') {
-    return {
-      props: {
-        recommendedGamesTitle: 'Recommended games',
-        recommendedGames: gamesMock,
-        recommendedHighlight: highlightMock
-      }
-    }
-  }
 
   const { data } = await apolloClient.query<QueryRecommended>({
     query: QUERY_RECOMMENDED
