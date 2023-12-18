@@ -10,7 +10,7 @@ services:
       DATABASE_USERNAME: wongames
       DATABASE_PASSWORD: wongames123
       DATABASE_NAME: wongames
-      STRIPE_KEY: 'pk_test_51OEeLWFoolC2SqgErUIRAz7dY6u8nTz0sf7Mh27saGKWytOiDD5h4rx3oEpiARjADbtiORDW1UrTdKmtz6kjC9nF003et4ig2F'
+      STRIPE_KEY: ${{ secrets.STRIPE_KEY }}
     ports:
       - '1337:1337'
     depends_on:
