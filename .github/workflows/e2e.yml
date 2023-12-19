@@ -32,3 +32,5 @@ jobs:
 
       - name: Run cypress
         run: yarn test:e2e:ci
+        env:
+          TZ: 'America/Campo_Grande'
