@@ -26,6 +26,10 @@ describe('Game Page', () => {
 
     cy.getByDataCy('content').children().should('have.length.at.least', 2)
 
+    cy.getByDataCy('game-details').invoke('text').then((text) => {
+      cy.task("log", text)
+    })
+
     // Details
     cy.getByDataCy('game-details').within(() => {
       cy.findByRole('heading', { name: /game details/i }).should('exist')
