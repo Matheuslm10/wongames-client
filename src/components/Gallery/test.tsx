@@ -41,7 +41,9 @@ describe('<Gallery />', () => {
     )
 
     const img = await screen.findByRole('img', { name: /Gallery Image 2/i })
-    expect(img.parentElement?.parentElement).toHaveClass('slick-active')
+    expect(img.parentElement?.parentElement?.parentElement).toHaveClass(
+      'slick-active'
+    )
   })
 
   it('should handle close modal when overlay or button clicked', () => {

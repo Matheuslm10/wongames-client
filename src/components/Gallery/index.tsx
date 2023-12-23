@@ -56,23 +56,7 @@ const settings: SliderSettings = {
       breakpoint: 1024,
       settings: {
         arrows: false,
-        slidesToShow: 2.2,
-        draggable: true
-      }
-    },
-    {
-      breakpoint: 570,
-      settings: {
-        arrows: false,
-        slidesToShow: 1.2,
-        draggable: true
-      }
-    },
-    {
-      breakpoint: 375,
-      settings: {
-        arrows: false,
-        slidesToShow: 1.1,
+        slidesToShow: 3.2,
         draggable: true
       }
     }
@@ -137,13 +121,14 @@ const Gallery = ({ items }: GalleryProps) => {
         <S.Content>
           <Slider ref={slider} settings={modalSettings}>
             {items.map((item, index) => (
-              <Image
-                width={1200}
-                height={675}
-                key={`gallery-${index}`}
-                src={item.src}
-                alt={item.label}
-              />
+              <S.ImageWrapper key={`gallery-${index}`}>
+                <Image
+                  src={item.src}
+                  alt={item.label}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </S.ImageWrapper>
             ))}
           </Slider>
         </S.Content>
