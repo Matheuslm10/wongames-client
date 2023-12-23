@@ -101,11 +101,11 @@ This application simulates a virtual store for PC games and was built with the g
 
 ## :jigsaw: Practiced Concepts
 - Best practices with ReactJS
-- Best practices with Styled
+- Best practices with Styled Components (CSS-in-JS)
 - Best practices with Testing
 - Server Side Rendering (SSR)
 - Static Site Generation (SSG)
-- Simple and dynamic routes
+- Next.js simple and dynamic routes
 - GraphQL operation principles
 - GraphQL queries and mutations
 - Filters and pagination
@@ -129,6 +129,7 @@ In addition to the application, a UI component playground (which also serves as 
 
 ## :hammer_and_wrench: Technologies
 
+- [Apollo](https://www.apollographql.com/)
 - [Cypress](https://www.cypress.io/)
 - [Eslint](https://eslint.org/)
 - [Husky](https://github.com/typicode/husky)
@@ -137,7 +138,6 @@ In addition to the application, a UI component playground (which also serves as 
 - [Prettier](https://prettier.io/)
 - [React JS](https://reactjs.org/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Redux](https://redux.js.org/)
 - [Storybook](https://storybook.js.org/)
 - [Styled Components](https://www.styled-components.com/)
 - [Typescript](https://www.typescriptlang.org/)
