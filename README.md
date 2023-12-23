@@ -33,7 +33,7 @@ This application simulates a virtual store for PC games and was built with the g
 - The store features a page that was developed to allow users to explore games conveniently, using filters for price, genre, and platform.
   <details>
 
-  <summary style={ font-color: red }>Click here to see the demo video</summary>
+  <summary>Click here to see the demo video</summary>
 
   https://github.com/Matheuslm10/wongames-client/assets/17602947/94a02db4-cc08-4203-a197-529483906a59
 
@@ -45,7 +45,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   <summary>Click here to see the demo video</summary>
 
-  <!-- https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576 -->
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/44be4396-55cc-4959-a2ce-7c5b2eeb164f
 
   </details>
 
@@ -55,7 +55,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   <summary>Click here to see the demo video</summary>
 
-  <!-- https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576 -->
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/6b9ff76d-f630-45b2-a349-fca227256353
 
   </details>
 
@@ -65,7 +65,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   <summary>Click here to see the demo video</summary>
 
-  <!-- https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576 -->
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/38c8edeb-a923-4786-b840-c6fcb5384917
 
   </details>
 
@@ -75,7 +75,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   <summary>Click here to see the demo video</summary>
 
-  <!-- https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576 -->
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/38fa6bf4-505f-4395-b52d-e3249d7ff29f
 
   </details>
 
@@ -85,7 +85,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   <summary>Click here to see the demo video</summary>
 
-  <!-- https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576 -->
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/08de2572-718e-485d-ba15-a0bc58b9b121
 
   </details>
 
@@ -95,7 +95,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   <summary>Click here to see the demo video</summary>
 
-  <!-- https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576 -->
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/f08b94f1-aba2-4b33-b0ce-1ad09c5f4a01
 
   </details>
 
