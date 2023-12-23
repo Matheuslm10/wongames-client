@@ -29,7 +29,7 @@ This application simulates a virtual store for PC games and was built with the g
 
 ## :bulb: Features
 
-#### Explore Games
+#### :mag: Explore Games
 - The store features a page that was developed to allow users to explore games conveniently, using filters for price, genre, and platform.
   <details>
 
@@ -39,7 +39,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   </details>
 
-#### Game Details:
+#### :space_invader: Game Details
 - Each game has a unique page featuring detailed descriptions, screenshots, and technical information.
   <details>
 
@@ -49,7 +49,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   </details>
 
-#### Shopping Cart:
+#### :shopping_cart: Shopping Cart
 - Customers can add multiple games to the cart and review them before completing the purchase.
   <details>
 
@@ -59,7 +59,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   </details>
 
-#### Payment Options:
+#### :credit_card: Payment Options
 - Payment can be made with credit or debit cards. (Via integration with [Stripe](https://stripe.com/))
   <details>
 
@@ -69,7 +69,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   </details>
 
-#### Authentication:
+#### :key: Authentication
 - Upon sign-up, users gain access to a personalized experience by logging in with their credentials.
   <details>
 
@@ -79,7 +79,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   </details>
 
-#### Account Management:
+#### :bust_in_silhouette: Account Management
 - There is a personalized area where users can manage their personal information, view past orders, and reset passwords.
   <details>
 
@@ -89,7 +89,7 @@ This application simulates a virtual store for PC games and was built with the g
 
   </details>
 
-#### Wishlist:
+#### :hearts: Wishlist
 - This feature allows users to save desired games for later purchase, making it easier to keep track of upcoming releases.
   <details>
 
@@ -197,4 +197,4 @@ yarn storybook
 [![Linkedin Badge](https://img.shields.io/badge/-Matheus_Machado-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/matheusmachado-dev/)
 :wave: Contact me!
 
-[:arrow_up: Back to Top](#Won-Games)
+[:arrow_up: Back to Top](#----won-games--)
