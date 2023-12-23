@@ -149,22 +149,22 @@ In addition to the application, a UI component playground (which also serves as 
 
 Clone the repository:
 ```
-$ git clone https://github.com/Matheuslm10/wongames-client.git
+git clone https://github.com/Matheuslm10/wongames-client.git
 ```
 
 Enter the directory:
 ```
-$ cd wongames-client
+cd wongames-client
 ```
 
 Install the dependencies:
 ```
-$ yarn install
+yarn install
 ```
 
 Run the application:
 ```
-$ yarn start
+yarn start
 ```
 
 Now you can access `http://localhost:3000` in your browser.
