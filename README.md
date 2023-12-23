@@ -1,30 +1,200 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<div align="center">
+  <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/527b7cfd-9d2f-41ee-8d4b-771da98369ac" height="80">
+  <h1 align="center">
+    Won Games
+  </h1>
+</div>
 
-First, run the development server:
+<h4 align="center">
+  All your favorite games in one place!
+</h4>
 
-```bash
-npm run dev
-# or
-yarn dev
+<div align="center">
+  <img alt="CI status" src="https://github.com/Matheuslm10/wongames-client/workflows/ci/badge.svg">
+</div>
+
+<br />
+
+<div align="center">
+  <img width="820" alt="Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/51b95704-c33f-4ca0-8484-77908cceaf8e">
+</div>
+
+<!-- Verificar se vou colocar várias prints da versão mobile. Um do lado do outro, meio que na frente. -->
+
+## :dart: Introduction
+
+This application simulates a virtual store for PC games and was built with the goal of applying advanced concepts of front-end development, unit testing (with and without TDD), end-to-end testing, continuous integration and delivery in a production environment.
+
+
+## :bulb: Features
+
+#### Explore Games
+- The store features a page that was developed to allow users to explore games conveniently, using filters for price, genre, and platform.
+  <details>
+
+  <summary style={ font-color: red }>Click here to see the demo video</summary>
+
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576
+
+  </details>
+
+#### Game Details:
+- Each game has a unique page featuring detailed descriptions, screenshots, and technical information.
+  <details>
+
+  <summary>Click here to see the demo video</summary>
+
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576
+
+  </details>
+
+#### Shopping Cart:
+- Customers can add multiple games to the cart and review them before completing the purchase.
+  <details>
+
+  <summary>Click here to see the demo video</summary>
+
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576
+
+  </details>
+
+#### Payment Options:
+- Payment can be made with credit or debit cards. (Via integration with [Stripe](https://stripe.com/))
+  <details>
+
+  <summary>Click here to see the demo video</summary>
+
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576
+
+  </details>
+
+#### Authentication:
+- Upon sign-up, users gain access to a personalized experience by logging in with their credentials.
+  <details>
+
+  <summary>Click here to see the demo video</summary>
+
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576
+
+  </details>
+
+#### Account Management:
+- There is a personalized area where users can manage their personal information, view past orders, and reset passwords.
+  <details>
+
+  <summary>Click here to see the demo video</summary>
+
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576
+
+  </details>
+
+#### Wishlist:
+- This feature allows users to save desired games for later purchase, making it easier to keep track of upcoming releases.
+  <details>
+
+  <summary>Click here to see the demo video</summary>
+
+  https://github.com/Matheuslm10/wongames-client/assets/17602947/18c47186-ce4e-4812-a1a5-45c0f3675576
+
+  </details>
+
+## :jigsaw: Practiced Concepts
+- Best practices with ReactJS
+- Best practices with Styled
+- Best practices with Testing
+- Server Side Rendering (SSR)
+- Static Site Generation (SSG)
+- Simple and dynamic routes
+- GraphQL operation principles
+- GraphQL queries and mutations
+- Filters and pagination
+- Using Storybook
+- Creating components from scratch
+- Utilizing third-party components
+- Rapid API development
+- Automated email sending
+- User authentication
+- Payment flow
+- Creating CI/CD pipelines
+- Automated deployment
+
+## :test_tube: UI Components Playground
+
+In addition to the application, a UI component playground (which also serves as documentation), was built with Storybook. This tool helps provide a user-friendly interface to interact with components, ensuring a more intuitive understanding of their functionalities and variations. The advantages of using Storybook include consistency and maintainability throughout the development lifecycle.
+
+<div align="center">
+  <img width="820" alt="Storybook Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/9f52395f-1aea-4a4c-9764-83280ab585ed">
+</div>
+
+## :hammer_and_wrench: Technologies
+
+- [Cypress](https://www.cypress.io/)
+- [Eslint](https://eslint.org/)
+- [Husky](https://github.com/typicode/husky)
+- [Jest](https://jestjs.io/)
+- [NextJS](https://nextjs.org/)
+- [Prettier](https://prettier.io/)
+- [React JS](https://reactjs.org/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [Redux](https://redux.js.org/)
+- [Storybook](https://storybook.js.org/)
+- [Styled Components](https://www.styled-components.com/)
+- [Typescript](https://www.typescriptlang.org/)
+
+
+## :computer: How to run
+
+<!-- Falar sobre NVM -->
+
+Clone the repository:
+```
+$ git clone https://github.com/Matheuslm10/wongames-client.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Enter the directory:
+```
+$ cd wongames-client
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Install the dependencies:
+```
+$ yarn install
+```
 
-## Learn More
+Run the application:
+```
+$ yarn start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Now you can access `http://localhost:3000` in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Linting
+```
+yarn lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Testing
+```
+yarn test
+```
 
-## Deploy on Vercel
+### Storybook
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Realize o build:
+```
+yarn run build-storybook
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Execute:
+```
+yarn storybook
+```
+
+
+## :man_technologist: Author
+
+[![Linkedin Badge](https://img.shields.io/badge/-Matheus_Machado-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/matheusmachado-dev/)
+:wave: Contact me!
+
+[:arrow_up: Back to Top](#Won-Games)
