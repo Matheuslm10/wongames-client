@@ -143,20 +143,97 @@ In addition to the application, a UI component playground (which also serves as 
 ## :hammer_and_wrench: Technologies
 
 <!-- Transformar em badges -->
+### Frameworks e Front-End Libraries
 
-- [Apollo](https://www.apollographql.com/)
-- [Cypress](https://www.cypress.io/)
-- [Docker](https://www.docker.com/)
-- [Eslint](https://eslint.org/)
-- [Husky](https://github.com/typicode/husky)
-- [Jest](https://jestjs.io/)
-- [NextJS](https://nextjs.org/)
-- [Prettier](https://prettier.io/)
-- [React JS](https://reactjs.org/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Styled Components](https://www.styled-components.com/)
-- [Typescript](https://www.typescriptlang.org/)
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="50" />
+        <p><small><a href="https://www.typescriptlang.org/">TypeScript</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" />
+        <p><small><a href="https://reactjs.org/">ReactJS</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="50" />
+        <p><small><a href="https://nextjs.org/">NextJS</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" width="50" />
+        <p><small><a href="https://graphql.org/">GraphQL</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/1931b3a6-56ef-4238-8d12-8731b3a780a9" width="50" />
+        <p><small><a href="https://www.apollographql.com/">Apollo</a></small></p>
+    </td>
+  </tr>
+</table>
+
+### Testing Libraries
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/2905af2d-eee0-4c49-a713-eb2c0c19278a" width="50" />
+        <p><small><a href="https://www.cypress.io/">Cypress</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" width="50" />
+        <p><small><a href="https://jestjs.io/">Jest</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/9c1ccde1-59cd-4efc-82f4-554097caf1eb" width="50" />
+        <p><small><a href="https://testing-library.com/docs/react-testing-library/intro">React Testing Library</a></small></p>
+    </td>
+  </tr>
+</table>
+
+### Lint and Formatation Tools
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/453d0f90-2793-436e-bb09-bc8d96f1d2c1" width="50" />
+        <p><small><a href="https://eslint.org/">ESLint</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/c35964c1-13d0-4980-b81b-76ac9c5df12b" width="50" />
+        <p><small><a href="https://github.com/typicode/husky">Husky</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/67add56f-d056-495d-9a1c-f3638aaac052" width="50" />
+        <p><small><a href="https://prettier.io/">Prettier</a></small></p>
+    </td>
+  </tr>
+</table>
+
+### Styling Libraries
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/a079b6b9-bc75-4386-a2aa-14d6ea017fb7" width="50" />
+        <p><small><a href="https://storybook.js.org/">Storybook</a></small></p>
+    </td>
+    <td align="center">
+        <img src="https://github.com/Matheuslm10/wongames-client/assets/17602947/de471cd2-ba14-424c-973f-dba66ba16b03" width="50" />
+        <p><small><a href="https://www.styled-components.com/">Styled Components</a></small></p>
+    </td>
+  </tr>
+</table>
+
+
+### DevOps
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" width="50" />
+        <p><small><a href="https://www.docker.com/">Docker</a></small></p>
+    </td>
+  </tr>
+</table>
 
 ## 🏗️ The Development Process
 
