@@ -22,9 +22,26 @@
 
 <!-- Verificar se vou colocar várias prints da versão mobile. Um do lado do outro, meio que na frente. -->
 
-## :dart: Introduction
+## Table of Contents
 
-This application simulates a virtual store for PC games and was built with the goal of applying advanced concepts of front-end development, unit testing (with and without TDD), end-to-end testing, continuous integration and delivery in a production environment.
+- [:dart: The Project](#dart-the-project)
+- [:bulb: Features](#bulb-features)
+- [:test\_tube: UI Components Playground](#test_tube-ui-components-playground)
+- [:hammer\_and\_wrench: Technologies](#hammer_and_wrench-technologies)
+- [:jigsaw: Practiced Concepts](#jigsaw-practiced-concepts)
+- [🏗️ The Development Process](#️-the-development-process)
+- [:computer: How to run](#computer-how-to-run)
+- [:man\_technologist: Author](#man_technologist-author)
+
+
+## :dart: The Project
+
+Won Games is a PC games e-commerce platform built with the goal of applying advanced front-end development concepts, unit testing (with and without TDD), end-to-end testing, continuous integration, and delivery in a production environment.
+
+The e-commerce platform consists of two applications:
+
+- **wongames-client** (code available in this repository): the user interface for customers, built with Next.js.
+- **wongames-api** (available in a separate repository): the service responsible for providing data. It was built with Strapi, a headless CMS, which in addition to acting as the back-end of the client application, also offers a user interface for the e-commerce administrator.
 
 
 ## :bulb: Features
@@ -99,6 +116,30 @@ This application simulates a virtual store for PC games and was built with the g
 
   </details>
 
+## :test_tube: UI Components Playground
+
+In addition to the application, a UI component playground (which also serves as documentation), was built with Storybook. This tool can be really handy for front-end development teams, and it can even help non-technical individuals to envision new features. It helps provide a user-friendly interface to interact with components, ensuring a more intuitive understanding of their functionalities and variations. The advantages of using Storybook include consistency and maintainability throughout the development lifecycle.
+
+<div align="center">
+  <img width="820" alt="Storybook Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/9f52395f-1aea-4a4c-9764-83280ab585ed">
+</div>
+
+## :hammer_and_wrench: Technologies
+
+- [Apollo](https://www.apollographql.com/)
+- [Cypress](https://www.cypress.io/)
+- [Docker](https://www.docker.com/)
+- [Eslint](https://eslint.org/)
+- [Husky](https://github.com/typicode/husky)
+- [Jest](https://jestjs.io/)
+- [NextJS](https://nextjs.org/)
+- [Prettier](https://prettier.io/)
+- [React JS](https://reactjs.org/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [Storybook](https://storybook.js.org/)
+- [Styled Components](https://www.styled-components.com/)
+- [Typescript](https://www.typescriptlang.org/)
+
 ## :jigsaw: Practiced Concepts
 - Best practices with ReactJS
 - Best practices with Styled Components (CSS-in-JS)
@@ -119,29 +160,13 @@ This application simulates a virtual store for PC games and was built with the g
 - Creating CI/CD pipelines
 - Automated deployment
 
-## :test_tube: UI Components Playground
+## 🏗️ The Development Process
 
-In addition to the application, a UI component playground (which also serves as documentation), was built with Storybook. This tool helps provide a user-friendly interface to interact with components, ensuring a more intuitive understanding of their functionalities and variations. The advantages of using Storybook include consistency and maintainability throughout the development lifecycle.
+The construction of this project was part of a very well-structured [course](https://www.udemy.com/course/react-avancado) that provided a solid foundation for application development. However, the course was released in 2020, and its support was discontinued before I had the availability to resume it. This required me to put in additional effort to investigate and resolve technical challenges that were not covered in the lessons, such as managing dependency versions, TypeScript errors, Docker image generation, and setting up the local development environment.
 
-<div align="center">
-  <img width="820" alt="Storybook Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/9f52395f-1aea-4a4c-9764-83280ab585ed">
-</div>
+To overcome these technical challenges, I adopted an investigative problem-solving approach, delving deep into the technologies used, reviewing official documentation, and exploring online communities. I feel that this not only strengthened my problem-solving skills but also contributed to a deeper understanding of the tools and technologies involved in the project.
 
-## :hammer_and_wrench: Technologies
-
-- [Apollo](https://www.apollographql.com/)
-- [Cypress](https://www.cypress.io/)
-- [Eslint](https://eslint.org/)
-- [Husky](https://github.com/typicode/husky)
-- [Jest](https://jestjs.io/)
-- [NextJS](https://nextjs.org/)
-- [Prettier](https://prettier.io/)
-- [React JS](https://reactjs.org/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Styled Components](https://www.styled-components.com/)
-- [Typescript](https://www.typescriptlang.org/)
-
+Overall, the development of this project was a rewarding experience. I learned a lot about front-end development, testing, and continuous integration. I also had the opportunity to make use of and enhance my skills and experience as a software engineer, which I have been building over the years.
 
 ## :computer: How to run
 
