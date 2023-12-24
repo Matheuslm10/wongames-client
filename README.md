@@ -24,7 +24,7 @@
 
 ## Table of Contents
 
-- [:dart: The Project](#dart-the-project)
+- [:video\_game: The Project](#video_game-the-project)
 - [:bulb: Features](#bulb-features)
 - [:arrows\_counterclockwise: Continuous Integration](#arrows_counterclockwise-continuous-integration)
 - [:test\_tube: UI Components Playground](#test_tube-ui-components-playground)
@@ -34,7 +34,7 @@
 - [:star2: Credits](#star2-credits)
 
 
-## :dart: The Project
+## :video_game: The Project
 
 Won Games is a PC games e-commerce platform built with the goal of applying advanced front-end development concepts, unit testing (with and without TDD), end-to-end testing, continuous integration, and delivery in a production environment.
 
