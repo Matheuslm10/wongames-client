@@ -118,7 +118,7 @@ The e-commerce platform consists of two applications:
 
 ## :arrows_counterclockwise: Continuous Integration
 
-To automatically identify code problems on a regular basis - with each new set of changes incorporated - a continuous integration solution has been implemented to ensure higher software quality for the project. GitHub Actions has been employed for this purpose, actively detecting new modifications and triggering end-to-end tests automatically.
+To automatically identify code problems on a regular basis (with each new set of changes incorporated) a continuous integration solution has been implemented to ensure higher software quality for the project. GitHub Actions has been employed for this purpose, actively detecting new modifications and triggering end-to-end tests automatically.
 
 When a new change request is created in the wongames-client repository, a Github action is initiated, building an end-to-end testing environment from Docker images. These images are automatically generated for each commit to the [wongames-api](https://github.com/Matheuslm10/wongames-api) and [wongames-database](https://github.com/Matheuslm10/wongames-database) repositories.
 
@@ -134,7 +134,7 @@ Example of a Pull Request with end-to-end verification: [PR](https://github.com/
 
 ## :test_tube: UI Components Playground
 
-In addition to the application, a UI component playground (which also serves as documentation), was built with Storybook. This tool can be really handy for front-end development teams, and it can even help non-technical individuals to envision new features. It helps provide a user-friendly interface to interact with components, ensuring a more intuitive understanding of their functionalities and variations. The advantages of using Storybook include consistency and maintainability throughout the development lifecycle.
+In addition to the application, a UI components playground (which also serves as documentation), was built with Storybook. This tool can be really handy for front-end development teams, and it can even help non-technical individuals to envision new features. It helps provide a user-friendly interface to interact with components, ensuring a more intuitive understanding of their functionalities and variations. The advantages of using Storybook include consistency and maintainability throughout the development lifecycle.
 
 <div align="center">
   <img width="820" alt="Storybook Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/9f52395f-1aea-4a4c-9764-83280ab585ed">
