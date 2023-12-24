@@ -124,10 +124,12 @@ When a new change request is created in the wongames-client repository, a Github
 
 The [wongames-database](https://github.com/Matheuslm10/wongames-database) repository is used to generate a Docker image containing a PostgreSQL database that is already populated with specific data that will be used in the end-to-end tests.
 
-Example of a Pull Request with end-to-end verification: https://github.com/Matheuslm10/wongames-client/pull/78
+Example of a Pull Request with end-to-end verification: [PR](https://github.com/Matheuslm10/wongames-client/pull/78)
+
+<br />
 
 <div align="center">
-  <img width="820" alt="Storybook Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/b35a573d-71c0-4e26-9143-10be0b246c58">
+  <img width="780" alt="Storybook Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/b35a573d-71c0-4e26-9143-10be0b246c58">
 </div>
 
 ## :test_tube: UI Components Playground
