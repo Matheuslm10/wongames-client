@@ -268,7 +268,14 @@ Overall, the development of this project was a rewarding experience. I learned a
 
 ## :computer: How to run
 
-<!-- Falar sobre NVM -->
+The recommended Node.js version to use in this project is specified in the `.nvmrc` file, at the root directory.
+
+> [!NOTE]
+> By installing and using [NVM](https://github.com/nvm-sh/nvm) you can automatically change to the version specified in `.nvmrc`. Just run the following command:
+> ```
+> nvm use
+> ```
+
 
 Clone the repository:
 ```
@@ -287,33 +294,38 @@ yarn install
 
 Run the application:
 ```
-yarn start
+yarn dev
 ```
 
 Now you can access `http://localhost:3000` in your browser.
 
-### Linting
+### Other Commands:
+- `yarn build`: creates the production build version.
+- `yarn start`: starts a simple server with the build production code.
+- `yarn lint`: runs the linter in all components and pages.
+- `yarn test`: runs jest to test all components and pages.
+- `yarn test:watch`: runs jest in watch mode.
+- `yarn storybook`: runs storybook on localhost:6006.
+- `yarn build-storybook`: create the build version of storybook.
+
+### E2E Tests:
+
+**Requirements**: [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/install/)
+
+Once you're at `wongames-client` directory, enter the following:
 ```
-yarn lint
+cd cypress
 ```
 
-### Testing
+Compose the E2E tests environment:
 ```
-yarn test
-```
-
-### Storybook
-
-1. Realize o build:
-```
-yarn run build-storybook
+docker-compose up
 ```
 
-2. Execute:
+Run the tests:
 ```
-yarn storybook
+yarn test:e2e
 ```
-
 
 ## :star2: Credits
 
