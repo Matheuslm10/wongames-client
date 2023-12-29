@@ -10,8 +10,12 @@
   All your favorite games in one place!
 </h4>
 
+
 <div align="center">
-  <img alt="CI status" src="https://github.com/Matheuslm10/wongames-client/workflows/ci/badge.svg">
+
+  <a href="https://codecov.io/gh/Matheuslm10/wongames-client">![Code Coverage Percentage](https://img.shields.io/codecov/c/github/Matheuslm10/wongames-client?logo=jest&logoColor=%23959DA5&labelColor=%23353D44)</a>
+  <a href="https://github.com/Matheuslm10/wongames-client/actions/workflows/ci.yml">![CI status](https://github.com/Matheuslm10/wongames-client/workflows/ci/badge.svg)</a>
+
 </div>
 
 <br />
@@ -20,6 +24,7 @@
   <img width="820" alt="Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/51b95704-c33f-4ca0-8484-77908cceaf8e">
 </div>
 
+<br />
 <!-- Verificar se vou colocar várias prints da versão mobile. Um do lado do outro, meio que na frente. -->
 
 ## Table of Contents
