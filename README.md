@@ -21,11 +21,8 @@
 <br />
 
 <div align="center">
-  <img width="820" alt="Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/51b95704-c33f-4ca0-8484-77908cceaf8e">
+  <img width="720" alt="Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/df2c4ddd-bffd-4507-81fb-d8fc9fc219e6">
 </div>
-
-<br />
-<!-- Verificar se vou colocar várias prints da versão mobile. Um do lado do outro, meio que na frente. -->
 
 ## Table of Contents
 
