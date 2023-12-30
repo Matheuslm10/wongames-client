@@ -87,4 +87,14 @@ export const Close = styled.div`
 export const Content = styled.div`
   max-width: min(120rem, 100%);
   max-height: 80rem;
+
+  ${media.lessThan('huge')`
+    padding: 65px;
+  `}
+`
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  width: 1200px;
+  height: 675px;
 `
