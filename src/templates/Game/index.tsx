@@ -46,9 +46,9 @@ const Game = ({
     <NextSeo
       title={`${gameInfo.title} - Won Games`}
       description={gameInfo.description}
-      canonical={`https://wongames.matheusmachado.com.br/game/${slug}`}
+      canonical={`https://wongames-matheusmachado.netlify.app/game/${slug}`}
       openGraph={{
-        url: `https://wongames.matheusmachado.com.br/game/${slug}`,
+        url: `https://wongames-matheusmachado.netlify.app/game/${slug}`,
         title: `${gameInfo.title} - Won Games`,
         description: gameInfo.description,
         images: [
