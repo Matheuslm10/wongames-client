@@ -1,6 +1,8 @@
 import '../.jest/next-image.mock'
+import { addDecorator } from '@storybook/react'
 import { ThemeProvider } from 'styled-components'
 import { CartContext, CartContextDefaultValues } from 'hooks/use-cart'
+import { withNextRouter } from 'storybook-addon-next-router'
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
 
@@ -19,6 +21,8 @@ export const parameters = {
     ]
   }
 }
+
+addDecorator(withNextRouter())
 
 export const decorators = [
   (Story, context) => (
