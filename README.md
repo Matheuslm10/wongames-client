@@ -21,7 +21,7 @@
 <br />
 
 <div align="center">
-  <img width="720" alt="Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/df2c4ddd-bffd-4507-81fb-d8fc9fc219e6">
+  <img width="700" alt="Desktop print" src="https://github.com/Matheuslm10/wongames-client/assets/17602947/df2c4ddd-bffd-4507-81fb-d8fc9fc219e6">
 </div>
 
 ## Table of Contents
