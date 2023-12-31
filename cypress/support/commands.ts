@@ -51,13 +51,13 @@ Cypress.Commands.add('signIn', (email = 'e2e@wongames.com', password = '123456')
 
 Cypress.Commands.add('shouldRenderBanner', () => {
   cy.get('.slick-slider').within(() => {
-    cy.findByRole('heading', { name: /kao the kangaroo/i }).should('exist')
+    cy.findByRole('heading', { name: /the medium deluxe edition upgrade/i }).should('exist')
     cy.findByRole('link', { name: /buy now/i }).should('exist')
 
     cy.get('.slick-dots > :nth-child(2) > button').click()
     cy.wait(500)
 
-    cy.findByRole('heading', { name: /the medium deluxe edition upgrade/i }).should('exist')
+    cy.findByRole('heading', { name: /kao the kangaroo/i }).should('exist')
     cy.findByRole('link', { name: /buy now/i }).should('exist')
   })
 })
