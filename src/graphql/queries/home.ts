@@ -5,7 +5,7 @@ import { HighlightFragment } from 'graphql/fragments/highlight'
 
 export const QUERY_HOME = gql`
   query QueryHome($date: Date!) {
-    banners {
+    banners(sort: "updated_at:desc") {
       ...BannerFragment
     }
 
